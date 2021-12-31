@@ -10,6 +10,7 @@ router.post("/", async(req, res) => {
             res.send({ user: user })
             console.log(user);
         } else {
+            res.send({ user: [] })
             console.log("No! data found");
         }
     });
